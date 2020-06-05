@@ -1,0 +1,6 @@
+framework module Pods_WDEngineering {
+  umbrella header "Pods-WDEngineering-umbrella.h"
+
+  export *
+  module * { export * }
+}
