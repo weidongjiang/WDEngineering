@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C14B0CE249DC224007A2572 /* WDShareData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C14B0CC249DC224007A2572 /* WDShareData.h */; };
+		4C14B0CF249DC224007A2572 /* WDShareData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C14B0CD249DC224007A2572 /* WDShareData.m */; };
 		4C75EE87249DC16100725DF8 /* WDShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C75EE7D249DC16100725DF8 /* WDShare.framework */; };
 		4C75EE8C249DC16100725DF8 /* WDShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C75EE8B249DC16100725DF8 /* WDShareTests.m */; };
 		4C75EE8E249DC16100725DF8 /* WDShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C75EE80249DC16100725DF8 /* WDShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C14B0CC249DC224007A2572 /* WDShareData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDShareData.h; sourceTree = "<group>"; };
+		4C14B0CD249DC224007A2572 /* WDShareData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDShareData.m; sourceTree = "<group>"; };
 		4C75EE7D249DC16100725DF8 /* WDShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WDShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C75EE80249DC16100725DF8 /* WDShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDShare.h; sourceTree = "<group>"; };
 		4C75EE81249DC16100725DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				4C75EE80249DC16100725DF8 /* WDShare.h */,
 				4C75EE81249DC16100725DF8 /* Info.plist */,
+				4C14B0CC249DC224007A2572 /* WDShareData.h */,
+				4C14B0CD249DC224007A2572 /* WDShareData.m */,
 			);
 			path = WDShare;
 			sourceTree = "<group>";
@@ -94,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C75EE8E249DC16100725DF8 /* WDShare.h in Headers */,
+				4C14B0CE249DC224007A2572 /* WDShareData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C14B0CF249DC224007A2572 /* WDShareData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

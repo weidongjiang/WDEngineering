@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C14B0D2249DC26C007A2572 /* WDUserLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C14B0D0249DC26C007A2572 /* WDUserLog.h */; };
+		4C14B0D3249DC26C007A2572 /* WDUserLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C14B0D1249DC26C007A2572 /* WDUserLog.m */; };
 		4C75EE63249DC14D00725DF8 /* WDUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C75EE59249DC14D00725DF8 /* WDUser.framework */; };
 		4C75EE68249DC14D00725DF8 /* WDUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C75EE67249DC14D00725DF8 /* WDUserTests.m */; };
 		4C75EE6A249DC14D00725DF8 /* WDUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C75EE5C249DC14D00725DF8 /* WDUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C14B0D0249DC26C007A2572 /* WDUserLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDUserLog.h; sourceTree = "<group>"; };
+		4C14B0D1249DC26C007A2572 /* WDUserLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDUserLog.m; sourceTree = "<group>"; };
 		4C75EE59249DC14D00725DF8 /* WDUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WDUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C75EE5C249DC14D00725DF8 /* WDUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDUser.h; sourceTree = "<group>"; };
 		4C75EE5D249DC14D00725DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				4C75EE5C249DC14D00725DF8 /* WDUser.h */,
 				4C75EE5D249DC14D00725DF8 /* Info.plist */,
+				4C14B0D0249DC26C007A2572 /* WDUserLog.h */,
+				4C14B0D1249DC26C007A2572 /* WDUserLog.m */,
 			);
 			path = WDUser;
 			sourceTree = "<group>";
@@ -94,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C75EE6A249DC14D00725DF8 /* WDUser.h in Headers */,
+				4C14B0D2249DC26C007A2572 /* WDUserLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C14B0D3249DC26C007A2572 /* WDUserLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

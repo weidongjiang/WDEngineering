@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "WDUserLog.h"
+#import "WDShareData.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    WDUserLog *userLog = [[WDUserLog alloc] init];
+    [userLog userLog];
+    
+    WDShareData *share = [[WDShareData alloc] init];
+    [share shareDataLog];
 }
 
 
