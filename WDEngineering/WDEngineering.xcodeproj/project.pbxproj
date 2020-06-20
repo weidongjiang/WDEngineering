@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C38FBD5249B3A0E00215130 /* userProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C536A1E249B1DA500DDAF6C /* userProduct.framework */; };
 		4C5371A02488A72A00A7F5A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C53719F2488A72A00A7F5A8 /* AppDelegate.m */; };
 		4C5371A32488A72A00A7F5A8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5371A22488A72A00A7F5A8 /* SceneDelegate.m */; };
 		4C5371A62488A72A00A7F5A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5371A52488A72A00A7F5A8 /* ViewController.m */; };
@@ -22,6 +23,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4C536A1D249B1DA500DDAF6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C536A18249B1DA400DDAF6C /* userProduct.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C5369FE249B1DA400DDAF6C;
+			remoteInfo = userProduct;
+		};
+		4C536A1F249B1DA500DDAF6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C536A18249B1DA400DDAF6C /* userProduct.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C536A07249B1DA400DDAF6C;
+			remoteInfo = userProductTests;
+		};
 		4C5371B72488A72C00A7F5A8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C5371932488A72900A7F5A8 /* Project object */;
@@ -40,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		14B4D3352217D0CDAFE02B0F /* Pods_WDEngineering_WDEngineeringUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDEngineering_WDEngineeringUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C536A18249B1DA400DDAF6C /* userProduct.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = userProduct.xcodeproj; path = userProduct/userProduct.xcodeproj; sourceTree = SOURCE_ROOT; };
 		4C53719B2488A72900A7F5A8 /* WDEngineering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDEngineering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C53719E2488A72A00A7F5A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C53719F2488A72A00A7F5A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C38FBD5249B3A0E00215130 /* userProduct.framework in Frameworks */,
 				6C8C2BB6FA37E11DB2005934 /* Pods_WDEngineering.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +123,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4C536A19249B1DA400DDAF6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C536A1E249B1DA500DDAF6C /* userProduct.framework */,
+				4C536A20249B1DA500DDAF6C /* userProductTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4C5371922488A72900A7F5A8 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +157,7 @@
 		4C53719D2488A72900A7F5A8 /* WDEngineering */ = {
 			isa = PBXGroup;
 			children = (
+				4C536A18249B1DA400DDAF6C /* userProduct.xcodeproj */,
 				4C53719E2488A72A00A7F5A8 /* AppDelegate.h */,
 				4C53719F2488A72A00A7F5A8 /* AppDelegate.m */,
 				4C5371A12488A72A00A7F5A8 /* SceneDelegate.h */,
@@ -174,7 +201,6 @@
 				DD446D15323B3AD85188E41B /* Pods-WDEngineeringTests.debug.xcconfig */,
 				7048B79859BB04FE7AEE63E7 /* Pods-WDEngineeringTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -272,6 +298,12 @@
 			mainGroup = 4C5371922488A72900A7F5A8;
 			productRefGroup = 4C53719C2488A72900A7F5A8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4C536A19249B1DA400DDAF6C /* Products */;
+					ProjectRef = 4C536A18249B1DA400DDAF6C /* userProduct.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4C53719A2488A72900A7F5A8 /* WDEngineering */,
@@ -280,6 +312,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4C536A1E249B1DA500DDAF6C /* userProduct.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = userProduct.framework;
+			remoteRef = 4C536A1D249B1DA500DDAF6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C536A20249B1DA500DDAF6C /* userProductTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = userProductTests.xctest;
+			remoteRef = 4C536A1F249B1DA500DDAF6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4C5371992488A72900A7F5A8 /* Resources */ = {
@@ -524,6 +573,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../**";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -576,6 +626,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../**";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

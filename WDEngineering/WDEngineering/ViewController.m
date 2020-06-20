@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WDUser.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    WDUser *user = [[WDUser alloc] init];
+    [user userLogID];
 }
 
 
