@@ -7,6 +7,7 @@
 //
 
 #import "WDUserLog.h"
+#import <Masonry.h>
 
 @implementation WDUserLog
 - (void)userLog {

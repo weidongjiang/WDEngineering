@@ -13,6 +13,7 @@
 		4C75EE87249DC16100725DF8 /* WDShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C75EE7D249DC16100725DF8 /* WDShare.framework */; };
 		4C75EE8C249DC16100725DF8 /* WDShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C75EE8B249DC16100725DF8 /* WDShareTests.m */; };
 		4C75EE8E249DC16100725DF8 /* WDShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C75EE80249DC16100725DF8 /* WDShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		617B7C1CD4D851256D0822DE /* libPods-WDShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82EF9261620A9257FE3728B9 /* libPods-WDShare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,9 @@
 		4C75EE86249DC16100725DF8 /* WDShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C75EE8B249DC16100725DF8 /* WDShareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDShareTests.m; sourceTree = "<group>"; };
 		4C75EE8D249DC16100725DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59193ABD44225E25D39074BC /* Pods-WDShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDShare.release.xcconfig"; path = "Target Support Files/Pods-WDShare/Pods-WDShare.release.xcconfig"; sourceTree = "<group>"; };
+		82EF9261620A9257FE3728B9 /* libPods-WDShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WDShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B74ECCC79E0EA7F9B5C7990D /* Pods-WDShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDShare.debug.xcconfig"; path = "Target Support Files/Pods-WDShare/Pods-WDShare.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C14B0DB249DCE1F007A2572 /* WDUser.framework in Frameworks */,
+				617B7C1CD4D851256D0822DE /* libPods-WDShare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				4C14B0DA249DCE1F007A2572 /* WDUser.framework */,
+				82EF9261620A9257FE3728B9 /* libPods-WDShare.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -72,6 +78,7 @@
 				4C75EE8A249DC16100725DF8 /* WDShareTests */,
 				4C75EE7E249DC16100725DF8 /* Products */,
 				4C14B0D9249DCE1F007A2572 /* Frameworks */,
+				FC2758524DF7938FA54611A4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +111,16 @@
 			path = WDShareTests;
 			sourceTree = "<group>";
 		};
+		FC2758524DF7938FA54611A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B74ECCC79E0EA7F9B5C7990D /* Pods-WDShare.debug.xcconfig */,
+				59193ABD44225E25D39074BC /* Pods-WDShare.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -123,6 +140,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C75EE91249DC16100725DF8 /* Build configuration list for PBXNativeTarget "WDShare" */;
 			buildPhases = (
+				020C351EB7B3D9B39CA89A6F /* [CP] Check Pods Manifest.lock */,
 				4C75EE78249DC16100725DF8 /* Headers */,
 				4C75EE79249DC16100725DF8 /* Sources */,
 				4C75EE7A249DC16100725DF8 /* Frameworks */,
@@ -207,6 +225,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		020C351EB7B3D9B39CA89A6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WDShare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C75EE79249DC16100725DF8 /* Sources */ = {
@@ -356,6 +399,7 @@
 		};
 		4C75EE92249DC16100725DF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B74ECCC79E0EA7F9B5C7990D /* Pods-WDShare.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -379,6 +423,7 @@
 		};
 		4C75EE93249DC16100725DF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59193ABD44225E25D39074BC /* Pods-WDShare.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

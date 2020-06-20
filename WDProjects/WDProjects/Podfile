@@ -15,3 +15,19 @@ target 'WDProjects' do
 pod 'Masonry', '~> 1.0.2'
 
 end
+
+target 'WDShare' do
+
+platform :ios, '8.0'
+project 'WDShare/WDShare.xcodeproj'
+pod 'Masonry', '~> 1.0.2'
+
+end
+
+target 'WDUser' do
+
+platform :ios, '8.0'
+project 'WDUser/WDUser.xcodeproj'
+pod 'Masonry', '~> 1.0.2'
+
+end
