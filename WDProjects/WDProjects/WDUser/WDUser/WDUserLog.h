@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WDUserLog : NSObject
 
 - (void)userLog;
 
+- (void)userLogShare;
 @end
 
 NS_ASSUME_NONNULL_END

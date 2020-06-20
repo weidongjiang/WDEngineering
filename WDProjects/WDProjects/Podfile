@@ -1,0 +1,17 @@
+
+platform :ios, '8.0'
+
+
+
+# 用cocoapods导入OC框架到swift项目必须写该项
+
+# user_frameworks!
+# workspace 文件名
+
+workspace 'WDProjects_dev.xcworkspace'
+
+target 'WDProjects' do
+
+pod 'Masonry', '~> 1.0.2'
+
+end

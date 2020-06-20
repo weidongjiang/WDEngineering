@@ -12,4 +12,10 @@
 - (void)shareDataLog {
     NSLog(@"shareDataLog");
 }
+
+- (void)shareUser {
+    WDUserLog *user = [[WDUserLog alloc] init];
+    [user userLogShare];
+}
+
 @end

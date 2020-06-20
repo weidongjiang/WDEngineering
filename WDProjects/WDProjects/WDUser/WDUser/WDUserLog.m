@@ -12,4 +12,8 @@
 - (void)userLog {
     NSLog(@"WDUserLog");
 }
+
+- (void)userLogShare {
+    NSLog(@"userLogShare---");
+}
 @end

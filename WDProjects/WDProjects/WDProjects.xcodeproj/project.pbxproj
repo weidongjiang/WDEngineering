@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341768E33E1EF8D865F78A7C /* libPods-WDProjects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B563C69D7F0CC8A46AC4E92 /* libPods-WDProjects.a */; };
 		4C14B0D6249DC2BC007A2572 /* WDShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C14B0D5249DC2BC007A2572 /* WDShare.framework */; };
 		4C14B0D8249DC2C0007A2572 /* WDUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C14B0D7249DC2C0007A2572 /* WDUser.framework */; };
 		4C75EE1C249DC12600725DF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C75EE1B249DC12600725DF8 /* AppDelegate.m */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D176B8F5A0E1338F40F1101 /* Pods-WDProjects.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDProjects.release.xcconfig"; path = "Target Support Files/Pods-WDProjects/Pods-WDProjects.release.xcconfig"; sourceTree = "<group>"; };
 		4C14B0D5249DC2BC007A2572 /* WDShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C14B0D7249DC2C0007A2572 /* WDUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C75EE17249DC12600725DF8 /* WDProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +60,8 @@
 		4C75EE3D249DC12800725DF8 /* WDProjectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDProjectsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C75EE41249DC12800725DF8 /* WDProjectsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDProjectsUITests.m; sourceTree = "<group>"; };
 		4C75EE43249DC12800725DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B563C69D7F0CC8A46AC4E92 /* libPods-WDProjects.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WDProjects.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D57B64816434674BD9AB3E0 /* Pods-WDProjects.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDProjects.debug.xcconfig"; path = "Target Support Files/Pods-WDProjects/Pods-WDProjects.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			files = (
 				4C14B0D8249DC2C0007A2572 /* WDUser.framework in Frameworks */,
 				4C14B0D6249DC2BC007A2572 /* WDShare.framework in Frameworks */,
+				341768E33E1EF8D865F78A7C /* libPods-WDProjects.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,7 @@
 			children = (
 				4C14B0D7249DC2C0007A2572 /* WDUser.framework */,
 				4C14B0D5249DC2BC007A2572 /* WDShare.framework */,
+				6B563C69D7F0CC8A46AC4E92 /* libPods-WDProjects.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,6 +110,7 @@
 				4C75EE40249DC12800725DF8 /* WDProjectsUITests */,
 				4C75EE18249DC12600725DF8 /* Products */,
 				4C14B0D4249DC2BC007A2572 /* Frameworks */,
+				63650A29262A542115635041 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +160,16 @@
 			path = WDProjectsUITests;
 			sourceTree = "<group>";
 		};
+		63650A29262A542115635041 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D57B64816434674BD9AB3E0 /* Pods-WDProjects.debug.xcconfig */,
+				2D176B8F5A0E1338F40F1101 /* Pods-WDProjects.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C75EE46249DC12800725DF8 /* Build configuration list for PBXNativeTarget "WDProjects" */;
 			buildPhases = (
+				0AE8FFB441C4944850F5BC16 /* [CP] Check Pods Manifest.lock */,
 				4C75EE13249DC12600725DF8 /* Sources */,
 				4C75EE14249DC12600725DF8 /* Frameworks */,
 				4C75EE15249DC12600725DF8 /* Resources */,
@@ -277,6 +295,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AE8FFB441C4944850F5BC16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WDProjects-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C75EE13249DC12600725DF8 /* Sources */ = {
@@ -455,6 +498,7 @@
 		};
 		4C75EE47249DC12800725DF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D57B64816434674BD9AB3E0 /* Pods-WDProjects.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +516,7 @@
 		};
 		4C75EE48249DC12800725DF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D176B8F5A0E1338F40F1101 /* Pods-WDProjects.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

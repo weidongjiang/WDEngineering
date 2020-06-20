@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C14B0CE249DC224007A2572 /* WDShareData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C14B0CC249DC224007A2572 /* WDShareData.h */; };
 		4C14B0CF249DC224007A2572 /* WDShareData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C14B0CD249DC224007A2572 /* WDShareData.m */; };
+		4C14B0DB249DCE1F007A2572 /* WDUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C14B0DA249DCE1F007A2572 /* WDUser.framework */; };
 		4C75EE87249DC16100725DF8 /* WDShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C75EE7D249DC16100725DF8 /* WDShare.framework */; };
 		4C75EE8C249DC16100725DF8 /* WDShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C75EE8B249DC16100725DF8 /* WDShareTests.m */; };
 		4C75EE8E249DC16100725DF8 /* WDShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C75EE80249DC16100725DF8 /* WDShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		4C14B0CC249DC224007A2572 /* WDShareData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDShareData.h; sourceTree = "<group>"; };
 		4C14B0CD249DC224007A2572 /* WDShareData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDShareData.m; sourceTree = "<group>"; };
+		4C14B0DA249DCE1F007A2572 /* WDUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WDUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C75EE7D249DC16100725DF8 /* WDShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WDShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C75EE80249DC16100725DF8 /* WDShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDShare.h; sourceTree = "<group>"; };
 		4C75EE81249DC16100725DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C14B0DB249DCE1F007A2572 /* WDUser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +57,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C14B0D9249DCE1F007A2572 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C14B0DA249DCE1F007A2572 /* WDUser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4C75EE73249DC16100725DF8 = {
 			isa = PBXGroup;
 			children = (
 				4C75EE7F249DC16100725DF8 /* WDShare */,
 				4C75EE8A249DC16100725DF8 /* WDShareTests */,
 				4C75EE7E249DC16100725DF8 /* Products */,
+				4C14B0D9249DCE1F007A2572 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,6 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../**";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -330,6 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../**";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

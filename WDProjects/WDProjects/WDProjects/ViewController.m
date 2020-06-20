@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "WDUserLog.h"
 #import "WDShareData.h"
+#import <Masonry.h>
 
 @interface ViewController ()
 
@@ -24,6 +25,8 @@
     
     WDShareData *share = [[WDShareData alloc] init];
     [share shareDataLog];
+    
+    [share shareUser];
 }
 
 
